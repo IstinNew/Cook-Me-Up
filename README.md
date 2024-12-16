@@ -44,6 +44,7 @@ Cook-Me-Up/
 │   │   └── cleaned_data.csv
 │
 ├── notebooks/
+│   ├── data_cleaning.ipynb
 │   ├── data_exploration.ipynb
 │   └── machine_learning.ipynb
 │
