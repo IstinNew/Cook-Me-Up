@@ -39,7 +39,7 @@ Cook-Me-Up/
 │
 ├── data/
 │   ├── raw/
-│   │   └── indian_food_101.csv
+│   │   └── indian_food.csv
 │   ├── processed/
 │   │   └── cleaned_data.csv
 │
