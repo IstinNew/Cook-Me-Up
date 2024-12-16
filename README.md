@@ -45,18 +45,17 @@ Cook-Me-Up/
 │
 ├── notebooks/
 │   ├── data_exploration.ipynb
-│   └── feature_engineering.ipynb
+│   └── machine_learning.ipynb
 │
 ├── scripts/
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   ├── machine_learning.py
-│   └── visualization.py
+│   ├── BiqQuery_EDA.sql
+│   ├── Input
+│   └── visualization.sql
 │
 ├── reports/
 │   ├── EDA_report.md
-│   ├── model_results.md
-│   └── final_presentation.pptx
+│   ├── results.md
+│   └── final_presentation
 │
 ├── README.md
 ├── INSTRUCTIONS.md
