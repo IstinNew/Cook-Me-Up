@@ -42,6 +42,6 @@ This project is a work in progress and will be updated in real-time. Stay tuned 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ### Acknowledgments
-[WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.
-Kaggle for providing the dataset.
-All contributors to this project.  
+- [WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.
+- Kaggle for providing the dataset.
+- All contributors to this project.  
