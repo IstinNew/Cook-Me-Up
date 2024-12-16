@@ -10,7 +10,7 @@ This project is a work in progress and will be updated in real-time. Stay tuned 
 **Project Name**: Cook-Me-Up: Simplifying Culinary Delights with Data  
 **Tools and Technologies**: Python, BigQuery SQL, Looker Studio, Machine Learning  
 **Dataset**: [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
-**Project Duration**: December 16, 2024 - January 16, 2025
+**Project Duration**: December 16, 2024 - January 16, 2025 (excluding days for year-end vacations)
 
 ## Objectives
 
@@ -31,6 +31,37 @@ This project is a work in progress and will be updated in real-time. Stay tuned 
 - Handling missing values and inconsistencies in the dataset.
 - Ensuring the machine learning models accurately categorize recipes.
 - Developing interactive and intuitive visualizations.
+
+## Folder Structure
+
+```plaintext
+Cook-Me-Up/
+│
+├── data/
+│   ├── raw/
+│   │   └── indian_food_101.csv
+│   ├── processed/
+│   │   └── cleaned_data.csv
+│
+├── notebooks/
+│   ├── data_exploration.ipynb
+│   └── feature_engineering.ipynb
+│
+├── scripts/
+│   ├── data_cleaning.py
+│   ├── feature_engineering.py
+│   ├── machine_learning.py
+│   └── visualization.py
+│
+├── reports/
+│   ├── EDA_report.md
+│   ├── model_results.md
+│   └── final_presentation.pptx
+│
+├── README.md
+├── INSTRUCTIONS.md
+├── LICENSE
+```
 
 ### Prerequisites
 
