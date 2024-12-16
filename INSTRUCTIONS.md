@@ -44,4 +44,4 @@ Follow these instructions to set up the project locally on your machine.
 7.5 Develop interactive dashboards for data visualization.
    
 8. **Contact**
-For any questions or issues, please contact [your-email@example.com].
+For any questions or issues, please contact [istinnew.github@gmail.com].
