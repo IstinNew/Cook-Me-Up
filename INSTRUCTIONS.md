@@ -15,10 +15,11 @@ Follow these instructions to set up the project locally on your machine.
    source env/bin/activate  # On Windows, use `env\Scripts\activate`
 
 3. **Data Acquisition**
-3.1 Download [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
+
+   3.1 Download [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
     Save the dataset as a CSV file.
    
-3.2 Import the Dataset into BigQuery
+   3.2 Import the Dataset into BigQuery
     Log in to your Google Cloud Console.
     Navigate to BigQuery.
     Create a new dataset and table, then upload the CSV file.
