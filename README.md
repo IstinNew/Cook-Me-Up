@@ -41,7 +41,7 @@ Cook-Me-Up/
 │   ├── raw/
 │   │   └── indian_food.csv        #CSV file from Kaggle API Call
 │   ├── processed/
-│   │   └── cleaned_data.csv       #CVS file as a Result of Data Cleaning
+│   │   └── cleaned_data.csv       #CSV file as a Result of Data Cleaning
 │   └── BigQuery/
 │       └── bigquery_output.csv    #CSV file as a Result of BiqQuerySQL
 │
@@ -53,7 +53,7 @@ Cook-Me-Up/
 ├── scripts/ 
 │   ├── bigquery_eda.sql           #SQL script for exploratory data analysis using BigQuery
 │   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis using BigQuery.
-│   └── visualization.sql          #Script for generating visualizations.
+│   └── visualization.sql          #SQL script for generating visualizations.
 │
 ├── reports/
 │   ├── EDA_report.md              #Markdown file documenting the exploratory data analysis.
