@@ -39,29 +39,31 @@ Cook-Me-Up/
 │
 ├── data/
 │   ├── raw/
-│   │   └── indian_food.csv
+│   │   └── indian_food.csv        #CSV file from Kaggle API Call
 │   ├── processed/
-│   │   └── cleaned_data.csv
+│   │   └── cleaned_data.csv       #CVS file as a Result of Data Cleaning
+│   └── BigQuery/
+│       └── bigquery_output.csv    #CSV file as a Result of BiqQuerySQL
 │
 ├── notebooks/
-│   ├── data_cleaning.ipynb
-│   ├── data_exploration.ipynb
-│   └── machine_learning.ipynb
+│   ├── data_cleaning.py           #Documents the data cleaning process.
+│   ├── data_exploration.py        #Documents the initial exploration and analysis of the dataset.
+│   └── machine_learning.py        #Documents the machine learning process, including model training and evaluation
 │
-├── scripts/
-│   ├── BiqQuery_EDA.sql
-│   ├── Input
-│   └── visualization.sql
+├── scripts/ 
+│   ├── bigquery_eda.sql           #SQL script for exploratory data analysis using BigQuery
+│   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis using BigQuery.
+│   └── visualization.sql          #Script for generating visualizations.
 │
 ├── reports/
-│   ├── EDA_report.md
-│   ├── results.md
-│   └── final_presentation
+│   ├── EDA_report.md              #Markdown file documenting the exploratory data analysis.
+│   ├── results.md                 #Markdown file documenting the results of the analysis.
+│   └── final_presentation         #Folder containing the final presentation materials.
 │
 ├── README.md
 ├── INSTRUCTIONS.md
 ├── LICENSE
-```
+
 
 ### Prerequisites
 
