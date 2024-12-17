@@ -46,19 +46,19 @@ Cook-Me-Up/
 │       └── bigquery_output.csv    #CSV file as a Result of BiqQuerySQL
 │
 ├── notebooks/
-│   ├── data_cleaning.py           #Documents the data cleaning process.
+│   ├── data_cleaning.py           #Documents the data cleaning process
 │   ├── data_exploration.py        #Documents the level 1 dataset EDA, level 2 with machine learning (training & evaluation)
 │   └── data_visualization.py      #Documents the data visualizations with Python libraries Pandas, Numpy, Matplotlib, Seaborn
 │
 ├── scripts/ 
 │   ├── bigquery_eda.sql           #SQL script for exploratory data analysis using BigQuery
-│   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis using BigQuery.
-│   └── visualization.sql          #SQL script for generating visualizations.
+│   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis using BigQuery
+│   └── visualization.sql          #SQL script for generating visualizations
 │
 ├── reports/
-│   ├── EDA_report.md              #Markdown file documenting the exploratory data analysis.
-│   ├── results.md                 #Markdown file documenting the results of the analysis.
-│   └── final_presentation         #Folder containing the final presentation materials.
+│   ├── EDA_report.md              #Markdown file documenting the exploratory data analysis
+│   ├── results.md                 #Markdown file documenting the results of the analysis
+│   └── final_presentation         #Folder containing the final presentation materials
 │
 ├── README.md
 ├── INSTRUCTIONS.md
