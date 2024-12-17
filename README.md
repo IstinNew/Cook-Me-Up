@@ -47,8 +47,8 @@ Cook-Me-Up/
 │
 ├── notebooks/
 │   ├── data_cleaning.py           #Documents the data cleaning process.
-│   ├── data_exploration.py        #Documents the initial exploration and analysis of the dataset.
-│   └── machine_learning.py        #Documents the machine learning process, including model training and evaluation
+│   ├── data_exploration.py        #Documents the level 1 exploratory data analysis of the dataset, level 2 with machine learning (model training & evaluation)
+│   └── data_visualization.py      #Documents the data visualizations with Python libraries Pandas, Numpy, Matplotlib, Seaborn
 │
 ├── scripts/ 
 │   ├── bigquery_eda.sql           #SQL script for exploratory data analysis using BigQuery
