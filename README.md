@@ -47,8 +47,8 @@ Cook-Me-Up/
 │
 ├── notebooks/
 │   ├── data_cleaning.py           #Documents the data cleaning process
-│   ├── data_exploration.py        #Documents the level 1 dataset EDA, level 2 with machine learning (training & evaluation)
-│   └── data_visualization.py      #Documents the data visualizations with Python libraries Pandas, Numpy, Matplotlib, Seaborn
+│   ├── data_exploration.py        #Documents the level 1 dataset EDA with Python libraries Pandas, Numpy, Matplotlib, Seaborn
+│   └── data_visualization.py      #Documents the level 2 dataset EDA visualizations with Python Pandas, machine learning (training & evaluation)
 │
 ├── scripts/ 
 │   ├── bigquery_eda.sql           #SQL script for exploratory data analysis using BigQuery
