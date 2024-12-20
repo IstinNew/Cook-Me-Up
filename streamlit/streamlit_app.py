@@ -5,9 +5,10 @@ import seaborn as sns
 import scipy.stats as stats
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder, StandardScaler
+import os
 
-# Define the absolute path to the dataset
-csv_file_path = r"D:\WBS Coding\Bootcamp\Project Works\Final Project\Working\Streamlit\indian_food.csv"
+# Define the relative path to the dataset (for Streamlit deployment)
+csv_file_path = os.path.join(os.getcwd(), 'indian_food.csv')
 
 # Function to load the dataset
 @st.cache_data
