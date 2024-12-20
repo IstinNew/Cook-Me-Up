@@ -1,0 +1,11 @@
+kagglehub
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+gcsfs  # For Google Cloud Storage file system
+google-cloud-bigquery
+google-auth
+scipy
