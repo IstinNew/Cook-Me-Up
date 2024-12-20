@@ -39,32 +39,37 @@ Cook-Me-Up/
 │
 ├── data/
 │   ├── raw/
-│   │   └── indian_food.csv        #CSV file from Kaggle API Call
+│   │   └── indian_food.csv        # Original CSV file from Kaggle API Call
 │   ├── processed/
-│   │   └── cleaned_data.csv       #CSV file as a Result of Data Cleaning
+│   │   └── cleaned_data.csv       # CSV file as a Result of Data Cleaning
 │   └── BigQuery/
-│       └── bigquery_output.csv    #CSV file as a Result of BiqQuerySQL
+│       └── bigquery_output.csv    # CSV file as a Result of BigQuery SQL
 │
 ├── notebooks/
-│   ├── data_cleaning.py           #Documents the data cleaning process
-│   ├── data_exploration.py        #Level 1 dataset EDA Python libraries Pandas, Numpy, Matplotlib, Seaborn
-│   └── data_visualization.py      #Level 2 dataset EDA Seaborn, machine learning (Clustering etc.), input to Looker Studio
+│   ├── data_cleaning.py           # Documents the data cleaning process
+│   ├── data_exploration.py        # Level 1 dataset EDA Python libraries Pandas, Numpy, Matplotlib, Seaborn
+│   └── data_visualization.py      # Level 2 dataset EDA Seaborn, machine learning (Clustering etc.), input to Looker Studio
 │
 ├── scripts/ 
-│   ├── bigquery_eda.sql           #SQL script for initial exploratory data analysis using BigQuery
-│   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis, meaningful insights using BigQuery
-│   └── visualization.sql          #SQL script for generating visualizations and input to Looker Studio
+│   ├── bigquery_eda.sql           # SQL script for initial exploratory data analysis using BigQuery
+│   ├── bigquery_analysis.sql      # SQL script for more in-depth analysis, meaningful insights using BigQuery
+│   └── visualization.sql          # SQL script for generating visualizations and input to Looker Studio
 │
 ├── reports/
-│   ├── EDA_report.md              #Markdown file documenting the exploratory data analysis
-│   ├── results.md                 #Markdown file documenting the results of the analysis
-│   └── final_presentation         #Folder containing the final presentation materials
+│   ├── EDA_report.md              # Markdown file documenting the exploratory data analysis
+│   ├── results.md                 # Markdown file documenting the results of the analysis
+│   └── final_presentation         # Folder containing the final presentation materials
+│
+├── streamlit/                     # New folder for Streamlit app files
+│   ├── streamlit_app.py           # Streamlit application script
+│   └── indian_food.csv            # Copy the raw CSV file here for Streamlit app
 │
 ├── README.md
 ├── INSTRUCTIONS.md
 ├── LICENSE
 
 
+```
 ### Prerequisites
 
 - Python 3.x
