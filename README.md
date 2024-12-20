@@ -47,13 +47,13 @@ Cook-Me-Up/
 │
 ├── notebooks/
 │   ├── data_cleaning.py           #Documents the data cleaning process
-│   ├── data_exploration.py        #Documents the level 1 dataset EDA with Python libraries Pandas, Numpy, Matplotlib, Seaborn
-│   └── data_visualization.py      #Documents the level 2 dataset EDA with Seaborn, machine learning (Clustering etc.)
+│   ├── data_exploration.py        #Level 1 dataset EDA with Python libraries Pandas, Numpy, Matplotlib, Seaborn
+│   └── data_visualization.py      #Level 2 dataset EDA with Seaborn, machine learning (Clustering etc.), input to Looker Studio
 │
 ├── scripts/ 
-│   ├── bigquery_eda.sql           #SQL script for exploratory data analysis using BigQuery
-│   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis using BigQuery
-│   └── visualization.sql          #SQL script for generating visualizations
+│   ├── bigquery_eda.sql           #SQL script for initial exploratory data analysis using BigQuery
+│   ├── bigquery_analysis.sql      #SQL script for more in-depth analysis, meaningful insights using BigQuery
+│   └── visualization.sql          #SQL script for generating visualizations and input to Looker Studio
 │
 ├── reports/
 │   ├── EDA_report.md              #Markdown file documenting the exploratory data analysis
