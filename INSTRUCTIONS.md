@@ -53,8 +53,11 @@ Follow these instructions to set up the project locally on your machine.
 ```
 
 8. **Exploratory Data Analysis, Data Engineering**
+
 8.1 Explore the Dataset
+
 8.2 Perform initial exploratory data analysis (EDA) to understand the data.
+
 8.3 Extract relevant features for analysis and machine learning models.
 
 9. **Machine Learning**
@@ -64,10 +67,15 @@ Follow these instructions to set up the project locally on your machine.
 ```
 
 10. **Visualization**
+
 10.1 Connect Looker Studio to BigQuery
+
 10.2 Open Looker Studio.
+
 10.3 Connect to your BigQuery dataset.
+
 10.4 Create Dashboards
+
 10.5 Develop interactive dashboards for data visualization.
    
 11. **Contact**
