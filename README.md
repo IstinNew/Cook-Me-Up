@@ -5,6 +5,9 @@ Welcome to Cook-Me-Up! This project aims to analyze and organize cooking recipes
 ### Updates
 This project is a work in progress and will be updated in real-time. Stay tuned for the latest enhancements and features!
 
+**Streamlit App Available**: The interactive Streamlit app is now live!  
+Explore the Indian food dataset and visualize various insights: [Cook-Me-Up Streamlit App](https://cook-me-up.streamlit.app/).
+
 ## Overview
 
 **Project Name**: Cook-Me-Up: Simplifying Culinary Delights with Data  
@@ -67,6 +70,7 @@ Cook-Me-Up/
 ├── README.md
 ├── INSTRUCTIONS.md
 ├── LICENSE
+
 
 
 ```
