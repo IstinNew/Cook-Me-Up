@@ -14,35 +14,61 @@ Follow these instructions to set up the project locally on your machine.
    python -m venv env
    source env/bin/activate  # On Windows, use `env\Scripts\activate`
 
-3. **Data Acquisition**
+3. **Install Dependencies**
+   Install all the required libraries by using requirements.txt:
+   ```
+   pip install -r requirements.txt
 
-   3.1 Download [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
+4. **Data Acquisition**
+
+   4.1 Download [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
     Save the dataset as a CSV file.
    
-   3.2 Import the Dataset into BigQuery
+   4.2 Import the Dataset into BigQuery
     Log in to your Google Cloud Console.
     Navigate to BigQuery.
     Create a new dataset and table, then upload the CSV file.
-    
-4. **Data Cleaning**
+
+5. **Run the Streamlit App Locally**
+    After setting up the virtual environment and installing the dependencies, you can run the Streamlit app locally:
+   ```
+    streamlit run streamlit/streamlit_app.py
+   ```
+   This will start the app locally at http://localhost:8501, where you can explore the Indian food dataset interactively.
+
+6. **Deploy the App on Streamlit Cloud**
+
+   Create an account on Streamlit Cloud.
+
+   Link your GitHub repository to Streamlit Cloud.
+
+   Deploy the app by selecting the repository and specifying the streamlit/streamlit_app.py script.
+
+   The app will be available at the link provided by Streamlit Cloud, for example: https://cook-me-up.streamlit.app/.
+
+7. **Data Cleaning**
    Run the data cleaning script to prepare the dataset for analysis.
+```
    python scripts/data_cleaning.py
+```
 
-5. **Exploratory Data Analysis, Data Engineering**
-5.1 Explore the Dataset
-5.2 Perform initial exploratory data analysis (EDA) to understand the data.
-5.3 Extract relevant features for analysis and machine learning models.
+8. **Exploratory Data Analysis, Data Engineering**
+8.1 Explore the Dataset
+8.2 Perform initial exploratory data analysis (EDA) to understand the data.
+8.3 Extract relevant features for analysis and machine learning models.
 
-6. **Machine Learning**
+9. **Machine Learning**
    Implement clustering algorithms to categorize recipes.
+```
    python scripts/machine_learning.py
- 
-7. **Visualization**
-7.1 Connect Looker Studio to BigQuery
-7.2 Open Looker Studio.
-7.3 Connect to your BigQuery dataset.
-7.4 Create Dashboards
-7.5 Develop interactive dashboards for data visualization.
+```
+
+10. **Visualization**
+10.1 Connect Looker Studio to BigQuery
+10.2 Open Looker Studio.
+10.3 Connect to your BigQuery dataset.
+10.4 Create Dashboards
+10.5 Develop interactive dashboards for data visualization.
    
-8. **Contact**
+11. **Contact**
 For any questions or issues, please contact [istinnew.github@gmail.com].
