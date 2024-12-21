@@ -18,6 +18,7 @@ The dataset is downloaded using the Kaggle API via the `kagglehub` library. Afte
 
 import pandas as pd                                             # Importing the required libraries
 import numpy as np                                              # Importing the required libraries
+import kagglehub as kh                                          # Importing the required libraries
 import matplotlib.pyplot as plt                                 # Importing the required libraries
 import seaborn as sns                                           # Importing the required libraries
 import scipy.stats as stats                                     # Importing the required libraries
