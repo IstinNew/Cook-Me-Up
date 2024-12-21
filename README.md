@@ -63,7 +63,7 @@ Cook-Me-Up/
 │   ├── results.md                 # Markdown file documenting the results of the analysis
 │   └── final_presentation         # Folder containing the final presentation materials
 │
-├── streamlit/                     # Streamlit app files (deployed through a side branch: streamlit_deployment)
+├── streamlit/                     # Streamlit app files (through a side branch: streamlit_deployment)
 │   ├── streamlit_app.py           # application script
 │   └── indian_food.csv            # raw CSV file for Streamlit app
 │
