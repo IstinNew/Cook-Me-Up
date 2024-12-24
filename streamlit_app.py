@@ -6,6 +6,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import os
+from wordcloud import WordCloud
 
 # Define the relative path to the dataset (for Streamlit deployment)
 csv_file_path = os.path.join(os.getcwd(), 'indian_food.csv')
@@ -33,12 +34,32 @@ st.sidebar.title("Navigation")
 # Sidebar navigation
 sections = st.sidebar.radio("Sections", ["Introduction", "Interactive Data Overview", "Visualizations", "Insights"])
 
+# WordCloud function
+def create_wordcloud(text, title):
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.title(title)
+    st.pyplot(plt)
+
 if sections == "Introduction":
     st.header("Introduction")
     st.write("""
     Welcome to the Cook-Me-Up project! This app provides insights into Indian food recipes using Python, Machine Learning, BigQuery, and Looker Studio.
     Navigate through the sections to explore interactive data, visualizations, and insights!
     """)
+
+    # Create word cloud for recipes requiring advance prep
+    final_data = df  # Assuming the dataset is prepared as `final_data`
+    
+    # Filter titles based on advance prep required (ensure this column exists in the data)
+    advance_prep_titles = ' '.join(final_data[final_data['advance prep required']]['title'])
+    no_advance_prep_titles = ' '.join(final_data[~final_data['advance prep required']]['title'])
+
+    # Generate and display the word clouds
+    create_wordcloud(advance_prep_titles, 'Common Words in Titles of Recipes Requiring Advance Prep')
+    create_wordcloud(no_advance_prep_titles, 'Common Words in Titles of Recipes Not Requiring Advance Prep')
 
 elif sections == "Interactive Data Overview":
     st.header("Interactive Data Overview")
