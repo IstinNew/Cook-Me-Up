@@ -66,6 +66,54 @@ elif sections == "Visualizations":
     st.header("Visualizations")
     st.write("Analyze the dataset through Python, Machine Learning, and Looker Studio visualizations.")
 
+    # Region selection for ingredient frequency visualization
+    region_selection = st.selectbox('Select Region to Display Ingredient Frequency', df['region'].unique())
+
+    # Create lists for ingredients per region
+    InEast, InWest, InNorth, InOthers, InNorthEast, InSouth, InCentral = [], [], [], [], [], [], []
+    for row in range(len(df)):
+        if df['region'][row] == 'East':
+            InEast.extend(df['ingredients'][row].split(', '))
+        elif df['region'][row] == 'West':
+            InWest.extend(df['ingredients'][row].split(', '))
+        elif df['region'][row] == 'North':
+            InNorth.extend(df['ingredients'][row].split(', '))
+        elif df['region'][row] == 'North East':
+            InNorthEast.extend(df['ingredients'][row].split(', '))
+        elif df['region'][row] == 'South':
+            InSouth.extend(df['ingredients'][row].split(', '))
+        elif df['region'][row] == 'Central':
+            InCentral.extend(df['ingredients'][row].split(', '))
+        else:
+            InOthers.extend(df['ingredients'][row].split(', '))
+
+    # Count ingredients in each region
+    all_ingredient = pd.Series(InEast + InWest + InNorth + InOthers + InNorthEast + InSouth + InCentral).unique()
+    ingredient_counts = {
+        'East': [InEast.count(ingredient) for ingredient in all_ingredient],
+        'West': [InWest.count(ingredient) for ingredient in all_ingredient],
+        'North': [InNorth.count(ingredient) for ingredient in all_ingredient],
+        'Others': [InOthers.count(ingredient) for ingredient in all_ingredient],
+        'North East': [InNorthEast.count(ingredient) for ingredient in all_ingredient],
+        'South': [InSouth.count(ingredient) for ingredient in all_ingredient],
+        'Central': [InCentral.count(ingredient) for ingredient in all_ingredient],
+    }
+
+    # Creating DataFrame for ingredient counts per region
+    ingredient_per_region = pd.DataFrame(ingredient_counts, index=all_ingredient)
+    ingredient_per_region['Sum'] = ingredient_per_region.sum(axis=1)
+
+    # Display the ingredient frequency plot for the selected region
+    st.subheader(f'Top 15 Ingredients in {region_selection} Region')
+    ord_region = ingredient_per_region.sort_values([region_selection], ascending=False)[0:15]
+    plt.figure(figsize=(12, 8), dpi=100)
+    sns.barplot(x=ord_region[region_selection], y=ord_region.index, palette='Paired')
+    plt.xlabel('Count')
+    plt.ylabel('Ingredients')
+    plt.title(f'{region_selection} Ingredient Frequency')
+    plt.xticks(rotation=45)
+    st.pyplot(plt)
+
     # Correlation heatmap
     st.subheader("Correlation Heatmap of Preparation and Cooking Times")
     prep_cook_corr = df[['prep_time', 'cook_time']].corr()
