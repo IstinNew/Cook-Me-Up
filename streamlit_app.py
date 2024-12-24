@@ -259,4 +259,3 @@ elif sections == "Insights":
 
 st.sidebar.markdown("---")
 st.sidebar.info("Project updates in progress until January 2025.")
->>>>>>> 1069ae484c9ddeaa899eba789d90bd53525901af
