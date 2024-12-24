@@ -27,14 +27,7 @@ def load_data(file_path):
 # Load data
 df = load_data(csv_file_path)
 
-# Streamlit app layout
-st.title("Cook-Me-Up: Indian Food Insights")
-st.sidebar.title("Navigation")
-
-# Sidebar navigation
-sections = st.sidebar.radio("Sections", ["Introduction", "Interactive Data Overview", "Visualizations", "Insights"])
-
-# WordCloud function
+# Function to generate word cloud
 def create_wordcloud(text, title):
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
     plt.figure(figsize=(10, 5))
@@ -43,6 +36,13 @@ def create_wordcloud(text, title):
     plt.title(title)
     st.pyplot(plt)
 
+# Streamlit app layout
+st.title("Cook-Me-Up: Indian Food Insights")
+st.sidebar.title("Navigation")
+
+# Sidebar navigation
+sections = st.sidebar.radio("Sections", ["Introduction", "Interactive Data Overview", "Visualizations", "Insights"])
+
 if sections == "Introduction":
     st.header("Introduction")
     st.write("""
@@ -50,16 +50,16 @@ if sections == "Introduction":
     Navigate through the sections to explore interactive data, visualizations, and insights!
     """)
 
-    # Create word cloud for recipes requiring advance prep
-    final_data = df  # Assuming the dataset is prepared as `final_data`
+    # Create word clouds for recipe titles and ingredients
+    st.subheader("Word Clouds for Recipe Titles and Ingredients")
     
-    # Filter titles based on advance prep required (ensure this column exists in the data)
-    advance_prep_titles = ' '.join(final_data[final_data['advance prep required']]['title'])
-    no_advance_prep_titles = ' '.join(final_data[~final_data['advance prep required']]['title'])
+    # Word cloud for recipe titles
+    recipe_titles = ' '.join(df['name'])
+    create_wordcloud(recipe_titles, 'Common Words in Recipe Titles')
 
-    # Generate and display the word clouds
-    create_wordcloud(advance_prep_titles, 'Common Words in Titles of Recipes Requiring Advance Prep')
-    create_wordcloud(no_advance_prep_titles, 'Common Words in Titles of Recipes Not Requiring Advance Prep')
+    # Word cloud for ingredients
+    ingredients_text = ' '.join(df['ingredients'])
+    create_wordcloud(ingredients_text, 'Common Ingredients in Recipes')
 
 elif sections == "Interactive Data Overview":
     st.header("Interactive Data Overview")
