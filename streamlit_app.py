@@ -103,7 +103,7 @@ elif sections == "Visualizations":
     ingredient_per_region = pd.DataFrame(ingredient_counts, index=all_ingredient)
     ingredient_per_region['Sum'] = ingredient_per_region.sum(axis=1)
 
-    # Display the ingredient frequency plot for the selected region
+    # Section 1: Top 15 Ingredients in the selected region
     st.subheader(f'Top 15 Ingredients in {region_selection} Region')
     ord_region = ingredient_per_region.sort_values([region_selection], ascending=False)[0:15]
     plt.figure(figsize=(12, 8), dpi=100)
@@ -114,26 +114,20 @@ elif sections == "Visualizations":
     plt.xticks(rotation=45)
     st.pyplot(plt)
 
-    # Correlation heatmap
+    # Section 2: Heatmap of Preparation and Cooking Times
     st.subheader("Correlation Heatmap of Preparation and Cooking Times")
     prep_cook_corr = df[['prep_time', 'cook_time']].corr()
     plt.figure(figsize=(6, 4))
     sns.heatmap(prep_cook_corr, annot=True, cmap='coolwarm')
     st.pyplot(plt)
 
-    # Clustering with K-Means
-    st.subheader("K-Means Clustering on Cooking and Preparation Times")
-    scaler = StandardScaler()
-    df_scaled = scaler.fit_transform(df[['prep_time', 'cook_time']])
-    kmeans = KMeans(n_clusters=3, random_state=42)
-    df['cluster'] = kmeans.fit_predict(df_scaled)
-    
-    plt.figure(figsize=(8, 6))
-    sns.scatterplot(data=df, x='prep_time', y='cook_time', hue='cluster', palette='viridis')
-    plt.title('Clusters of Cooking and Preparation Times')
+    # Section 3: Pairplot for Prep Time, Cook Time, and Diet
+    st.subheader("Pairplot of Preparation Time, Cooking Time, and Diet")
+    plt.figure(figsize=(10, 8))
+    sns.pairplot(df[['prep_time', 'cook_time', 'diet']], hue='diet', palette='Set1')
     st.pyplot(plt)
 
-    # Integration with Looker Studio
+    # Section 4: Integration with Looker Studio
     st.subheader("Looker Studio Integration")
     st.write("Explore enhanced visualizations via Looker Studio:")
     st.markdown("[Click here to view the Looker Studio report](https://example-looker-studio-link.com)")
