@@ -114,20 +114,13 @@ elif sections == "Visualizations":
     plt.xticks(rotation=45)
     st.pyplot(plt)
 
-    # Section 2: Heatmap of Preparation and Cooking Times
-    st.subheader("Correlation Heatmap of Preparation and Cooking Times")
-    prep_cook_corr = df[['prep_time', 'cook_time']].corr()
-    plt.figure(figsize=(6, 4))
-    sns.heatmap(prep_cook_corr, annot=True, cmap='coolwarm')
-    st.pyplot(plt)
-
-    # Section 3: Pairplot for Prep Time, Cook Time, and Diet
+    # Section 2: Pairplot for Prep Time, Cook Time, and Diet
     st.subheader("Pairplot of Preparation Time, Cooking Time, and Diet")
     plt.figure(figsize=(10, 8))
     sns.pairplot(df[['prep_time', 'cook_time', 'diet']], hue='diet', palette='Set1')
     st.pyplot(plt)
 
-    # Section 4: Integration with Looker Studio
+    # Section 3: Integration with Looker Studio
     st.subheader("Looker Studio Integration")
     st.write("Explore enhanced visualizations via Looker Studio:")
     st.markdown("[Click here to view the Looker Studio report](https://example-looker-studio-link.com)")
@@ -138,7 +131,6 @@ elif sections == "Insights":
 
     # Key takeaways
     st.write("""
-    - The majority of dishes are categorized under the 'Others' flavor profile.
     - North and South regions dominate the dataset in terms of the number of dishes.
     - Preparation and cooking times vary significantly, allowing clustering to identify patterns in the data.
     - Visualizations from Looker Studio provide additional depth to the analysis.
