@@ -84,6 +84,6 @@ Cook-Me-Up/
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ### Acknowledgments
-- [WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.
-- Kaggle for providing the dataset.
+<!-- - [WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.-->
+- [Kaggle- Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101) for the dataset.
 - All contributors to this project.  
