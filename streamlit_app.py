@@ -53,6 +53,7 @@ if sections == "Introduction":
     st.markdown("""
     **Dataset Source:** [Indian Food 101 on Kaggle](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
     **Conceptualized and Developed by:** Shayak  
+    **Special Thanks to:** [WBS Coding School](https://www.wbscodingschool.com) for guidance and inspiration.  
     """)
     st.markdown("© 2025 Shayak. All Rights Reserved.")
 
