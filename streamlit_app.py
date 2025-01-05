@@ -50,6 +50,12 @@ if sections == "Introduction":
     Navigate through the sections to explore interactive data, visualizations, and insights!
     """)
 
+    st.markdown("""
+    **Dataset Source:** [Indian Food 101 on Kaggle](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
+    **Conceptualized and Developed by:** Shayak  
+    """)
+    st.markdown("© 2025 Shayak. All Rights Reserved.")
+
     # Create word clouds for recipe titles and ingredients
     st.subheader("Word Clouds for Recipe Titles and Ingredients")
     
