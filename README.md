@@ -1,41 +1,46 @@
-# Cook-Me-Up: Simplifying Culinary Delights with Data 🍳📊
+# **Cook-Me-Up: Simplifying Culinary Delights with Data 🍳📊**
 
-Welcome to Cook-Me-Up! This project aims to analyze and organize cooking recipes using data analysis (Python, BigQuery SQL, Looker Studio etc.) and machine learning techniques. Our goal is to simplify meal preparation and offer users a comprehensive database of culinary delights.
+Welcome to **Cook-Me-Up**! This project combines the power of data analysis, machine learning, and interactive visualizations to explore and organize cooking recipes. By analyzing an extensive Indian food dataset, we aim to simplify meal preparation and provide users with a comprehensive database of culinary delights.
 
-### Updates
-This project is a work in progress and will be updated in real-time. Stay tuned for the latest enhancements and features!
+---
 
-**Streamlit App Available**: The interactive Streamlit app is now live!  
-Explore the Indian food dataset and visualize various insights: [Cook-Me-Up Streamlit App](https://cook-me-up.streamlit.app/).
+## **🚀 Key Updates**
 
-## Overview
+- **Live Streamlit App**: Explore the dataset and gain insights interactively!  
+  👉 [Cook-Me-Up Streamlit App](https://cook-me-up.streamlit.app/)  
 
-**Project Name**: Cook-Me-Up: Simplifying Culinary Delights with Data  
-**Tools and Technologies**: Python, BigQuery SQL, Looker Studio, Machine Learning  
-**Dataset**: [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
-**Project Duration**: December 16, 2024 - January 16, 2025 (excluding weekends, xmas + new year-end vacations)
+This project is a work in progress and will be updated in real-time until February 2025. Stay tuned for the latest enhancements and features!
 
-## Objectives
+---
 
-- Analyze and organize cooking recipes
-- Provide easy-to-follow instructions, ingredients, and cooking times
-- Use Unsupervised Machine Learning techniques (e.g., Clustering)
-- Develop interactive visualizations using Looker Studio
+## **🔍 Overview**
 
-## Highlights
+- **Project Name**: Cook-Me-Up: Simplifying Culinary Delights with Data  
+- **Tools and Technologies**: Python, BigQuery SQL, Looker Studio, Machine Learning  
+- **Dataset**: [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
+- **Project Duration**: December 16, 2024 - January 16, 2025 (excluding weekends, xmas + new year-end vacations)
 
-- **Data Collection and Cleaning**: Efficiently collected and cleaned the dataset to ensure accuracy.
-- **Feature Engineering**: Extracted relevant features from the dataset for better analysis.
-- **Machine Learning Models**: Implemented clustering algorithms to categorize recipes.
-- **Interactive Dashboards**: Created user-friendly dashboards using Looker Studio for easy data visualization.
+---
 
-## Challenges
+## **🎯 Objectives**
 
-- Handling missing values and inconsistencies in the dataset.
-- Ensuring the machine learning models accurately categorize recipes.
-- Developing interactive and intuitive visualizations.
+- Analyze and organize cooking recipes.
+- Provide easy-to-follow instructions, ingredients, and cooking times.
+- Apply unsupervised machine learning techniques (e.g., Clustering).
+- Develop interactive visualizations using Looker Studio.
 
-## Folder Structure
+---
+
+## **🌟 Highlights**
+
+- **Data Collection and Cleaning**: Efficiently collected and cleaned the dataset to ensure accuracy.  
+- **Feature Engineering**: Extracted relevant features from the dataset for better analysis.  
+- **Machine Learning Models**: Implemented clustering algorithms to categorize recipes.  
+- **Interactive Dashboards**: Designed user-friendly dashboards using Looker Studio for easy data visualization.  
+
+---
+
+## **🛠️ Folder Structure**
 
 ```plaintext
 Cook-Me-Up/
@@ -77,18 +82,31 @@ Cook-Me-Up/
 │   └── ... (other images)
 
 
-
 ```
-### Prerequisites
+### 📋 Prerequisites
 
 - Python 3.x
 - BigQuery account
 - Looker Studio account
 
-### License
+### 📈 Results
+#### Detailed Results and Reports:
+
+Exploratory Data Analysis Report
+
+Results Analysis Report
+Explore these markdown files to dive deeper into the project's insights and findings.
+
+#### Streamlit App: Cook-Me-Up Streamlit App.
+
+All files and reports are located in their respective subfolders for easy navigation.
+
+
+
+### 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Acknowledgments
+### 🙏 Acknowledgments
 <!-- - [WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.-->
 - [Kaggle- Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101) for the dataset.
 - All contributors to this project.  
