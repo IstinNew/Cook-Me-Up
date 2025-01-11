@@ -41,7 +41,7 @@ The dataset was downloaded from Kaggle and processed to remove inconsistencies:
 | Non-Vegetarian | 55  |
 
 **Visualization: Diet Type Distribution**
-![Diet Type Distribution](diet_type_distribution.png)
+![Diet Type Distribution](../diet_type_distribution.png)
 
 #### Regional Cuisine:
 The dataset highlights cuisines from all regions of India, with North India having the highest representation.
