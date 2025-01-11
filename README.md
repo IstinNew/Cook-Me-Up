@@ -108,7 +108,7 @@ To understand the relationships between key features of the dataset, a **Pair Pl
 
 The pair plot revealed interesting trends, such as how the total time required for recipes is distributed across different regions and how the flavor profile correlates with the number of ingredients. These insights provide valuable context for categorizing recipes and understanding regional patterns in Indian cuisine.
 
-👉 **[View the Pair Plot](../images/Pair_Plot.png)**
+👉 **[View the Pair Plot](./images/Pair_Plot.png)**
 
 All files and reports are structured in their respective subfolders for easy navigation. Explore them for detailed results and insights!
 
