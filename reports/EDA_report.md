@@ -28,7 +28,8 @@ The dataset was downloaded from Kaggle and processed to remove inconsistencies:
 - **Cooking Time**: Distribution is right-skewed, with outliers requiring over 2 hours.
   
 **Visualization: Cooking Time Distribution**
-![Cooking Time Distribution](cooking_time_distribution.png)
+![Cooking Time Distribution](../images/cooking_time_distribution.png)
+
 
 ---
 
