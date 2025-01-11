@@ -70,6 +70,11 @@ Cook-Me-Up/
 ├── README.md
 ├── INSTRUCTIONS.md
 ├── LICENSE
+│
+├── images/
+│   ├── cooking_time_distribution.png
+│   ├── diet_type_distribution.png
+│   └── ... (other images)
 
 
 
