@@ -92,9 +92,9 @@ Cook-Me-Up/
 ### 📈 Results
 #### Detailed Results and Reports:
 
-Exploratory Data Analysis Report
+![Exploratory Data Analysis Report](../)
 
-Results Analysis Report
+![Results Analysis Report](../)
 Explore these markdown files to dive deeper into the project's insights and findings.
 
 #### Streamlit App: Cook-Me-Up Streamlit App.
