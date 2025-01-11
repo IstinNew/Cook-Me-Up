@@ -79,6 +79,7 @@ Cook-Me-Up/
 ├── images/
 │   ├── cooking_time_distribution.png
 │   ├── diet_type_distribution.png
+│   ├── Pair_Plot.png
 │   └── ... (other images)
 
 
