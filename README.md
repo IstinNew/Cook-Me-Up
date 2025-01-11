@@ -92,7 +92,7 @@ Cook-Me-Up/
 ### 📈 Results
 #### Detailed Results and Reports:
 
-![Exploratory Data Analysis Report](../reports/EDA_report.md)
+![Exploratory Data Analysis Report](./reports/EDA_report.md)
 
 ![Results Analysis Report](../)
 
