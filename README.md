@@ -90,20 +90,29 @@ Cook-Me-Up/
 - Looker Studio account
 
 ### 📈 Results
-#### Detailed Results and Reports:
 
- 👉[Exploratory Data Analysis Report](./reports/EDA_report.md)
+#### Detailed Results and Reports
 
- 👉[Results Analysis Report](./reports/results.md)
+- 👉 **[Exploratory Data Analysis Report](./reports/EDA_report.md)**  
+  This report covers the step-by-step exploratory data analysis of the dataset, highlighting key trends and patterns.
 
-Explore these markdown files to dive deeper into the project's insights and findings.
+- 👉 **[Results Analysis Report](./reports/results.md)**  
+  This report documents the final findings and insights derived from the project, including machine learning outcomes.
 
-#### Streamlit App: Cook-Me-Up Streamlit App.
+- 👉 **[Cook-Me-Up Streamlit App](https://cook-me-up.streamlit.app/)**  
+  Explore the dataset dynamically and gain insights using the interactive app.
 
-All files and reports are located in their respective subfolders for easy navigation.
+#### Machine Learning Visualization: Pair Plot
 
+To understand the relationships between key features of the dataset, a **Pair Plot** was generated using machine learning techniques. This visualization highlights interactions between features such as total time, number of ingredients, flavor profile, course, and region. Each cell in the pair plot matrix represents a scatter plot of two features, with one feature on the X-axis and the other on the Y-axis. The diagonal cells display the distribution of individual features.
 
+The pair plot revealed interesting trends, such as how the total time required for recipes is distributed across different regions and how the flavor profile correlates with the number of ingredients. These insights provide valuable context for categorizing recipes and understanding regional patterns in Indian cuisine.
 
+👉 **[View the Pair Plot](../images/Pair_Plot.png)**
+
+All files and reports are structured in their respective subfolders for easy navigation. Explore them for detailed results and insights!
+
+---
 ### 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
