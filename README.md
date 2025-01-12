@@ -115,7 +115,7 @@ All files and reports are structured in their respective subfolders for easy nav
 
 ---
 ### 📜 License
-<!-- -This project is licensed under the MIT License. See the [LICENSE](.)  for details.-->
+-This project is licensed under the MIT License. See the [LICENSE](./LICENSE)  for details.
 <!-- -->
 ### 🙏 Acknowledgments
 <!-- - [WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.-->
