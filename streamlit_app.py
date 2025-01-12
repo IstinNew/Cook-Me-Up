@@ -49,7 +49,6 @@ if sections == "Introduction":
     Welcome to the Cook-Me-Up project! This app provides insights into Indian food recipes using Python, Machine Learning, BigQuery, and Looker Studio.
     Navigate through the sections to explore interactive data, visualizations, and insights!
     """)
-
     st.markdown("""
     **Dataset Source:** [Indian Food 101 on Kaggle](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)  
     **Conceptualized and Developed by:** Shayak Majumder  
@@ -59,63 +58,42 @@ if sections == "Introduction":
 
     # Create word clouds for recipe titles and ingredients
     st.subheader("Word Clouds for Recipe Titles and Ingredients")
-    
-    # Word cloud for recipe titles
     recipe_titles = ' '.join(df['name'])
     create_wordcloud(recipe_titles, 'Common Words in Recipe Titles')
-
-    # Word cloud for ingredients
     ingredients_text = ' '.join(df['ingredients'])
     create_wordcloud(ingredients_text, 'Common Ingredients in Recipes')
 
 elif sections == "Interactive Data Overview":
     st.header("Interactive Data Overview")
     st.write("Explore the dataset interactively using filters.")
-
-    # Filter options
     selected_flavor = st.selectbox("Select Flavor Profile", options=df['flavor_profile'].unique())
     selected_region = st.multiselect("Select Region(s)", options=df['region'].unique(), default=df['region'].unique())
     selected_diet = st.radio("Select Diet", options=df['diet'].unique())
-
-    # Filter dataset
     filtered_df = df[
         (df['flavor_profile'] == selected_flavor) &
         (df['region'].isin(selected_region)) &
         (df['diet'] == selected_diet)
     ]
-
     st.write(f"Filtered dataset ({len(filtered_df)} rows):")
     st.dataframe(filtered_df)
-
     st.write("Summary statistics of the filtered data:")
     st.write(filtered_df.describe())
 
 elif sections == "Visualizations":
     st.header("Visualizations")
     st.write("Analyze the dataset through Python, Machine Learning, and Looker Studio visualizations.")
-
-    # Region selection for ingredient frequency visualization
     region_selection = st.selectbox('Select Region to Display Ingredient Frequency', df['region'].unique())
-
-    # Create lists for ingredients per region
     InEast, InWest, InNorth, InOthers, InNorthEast, InSouth, InCentral = [], [], [], [], [], [], []
     for row in range(len(df)):
-        if df['region'][row] == 'East':
-            InEast.extend(df['ingredients'][row].split(', '))
-        elif df['region'][row] == 'West':
-            InWest.extend(df['ingredients'][row].split(', '))
-        elif df['region'][row] == 'North':
-            InNorth.extend(df['ingredients'][row].split(', '))
-        elif df['region'][row] == 'North East':
-            InNorthEast.extend(df['ingredients'][row].split(', '))
-        elif df['region'][row] == 'South':
-            InSouth.extend(df['ingredients'][row].split(', '))
-        elif df['region'][row] == 'Central':
-            InCentral.extend(df['ingredients'][row].split(', '))
-        else:
-            InOthers.extend(df['ingredients'][row].split(', '))
-
-    # Count ingredients in each region
+        region = df['region'][row]
+        ingredients = df['ingredients'][row].split(', ')
+        if region == 'East': InEast.extend(ingredients)
+        elif region == 'West': InWest.extend(ingredients)
+        elif region == 'North': InNorth.extend(ingredients)
+        elif region == 'North East': InNorthEast.extend(ingredients)
+        elif region == 'South': InSouth.extend(ingredients)
+        elif region == 'Central': InCentral.extend(ingredients)
+        else: InOthers.extend(ingredients)
     all_ingredient = pd.Series(InEast + InWest + InNorth + InOthers + InNorthEast + InSouth + InCentral).unique()
     ingredient_counts = {
         'East': [InEast.count(ingredient) for ingredient in all_ingredient],
@@ -126,12 +104,8 @@ elif sections == "Visualizations":
         'South': [InSouth.count(ingredient) for ingredient in all_ingredient],
         'Central': [InCentral.count(ingredient) for ingredient in all_ingredient],
     }
-
-    # Creating DataFrame for ingredient counts per region
     ingredient_per_region = pd.DataFrame(ingredient_counts, index=all_ingredient)
     ingredient_per_region['Sum'] = ingredient_per_region.sum(axis=1)
-
-    # Section 1: Top 15 Ingredients in the selected region
     st.subheader(f'Top 15 Ingredients in {region_selection} Region')
     ord_region = ingredient_per_region.sort_values([region_selection], ascending=False)[0:15]
     plt.figure(figsize=(12, 8), dpi=100)
@@ -141,18 +115,10 @@ elif sections == "Visualizations":
     plt.title(f'{region_selection} Ingredient Frequency')
     plt.xticks(rotation=45)
     st.pyplot(plt)
-
-    # Section 2: Pairplot for Prep Time, Cook Time, and Diet
-    st.subheader("Pairplot of Preparation Time, Cooking Time, and Diet")
-    plt.figure(figsize=(10, 8))
-    sns.pairplot(df[['prep_time', 'cook_time', 'diet']], hue='diet', palette='Set1')
-    st.pyplot(plt)
-
-    # Section 3: Integration with Looker Studio
     st.subheader("Looker Studio Integration")
-    st.write("Explore enhanced visualizations via Looker Studio embedded below:")
+    st.write("Explore enhanced visualizations via Looker Studio below:")
     st.components.v1.iframe(
-        src="https://lookerstudio.google.com/reporting/77435f8b-ea4d-4201-8cf0-356d8445671e/page/mQ1cE",
+        src="https://lookerstudio.google.com/embed/reporting/77435f8b-ea4d-4201-8cf0-356d8445671e/page/mQ1cE",
         width=1200,
         height=800,
     )
