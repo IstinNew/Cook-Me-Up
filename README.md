@@ -92,16 +92,19 @@ Cook-Me-Up/
 
 ### 📈 Results
 
-#### Detailed Results and Reports
+### **Detailed Results and Reports**
 
 - 👉 **[Exploratory Data Analysis Report](./reports/EDA_report.md)**  
-  This report covers the step-by-step exploratory data analysis of the dataset, highlighting key trends and patterns.
+  This report provides a comprehensive step-by-step exploratory data analysis of the dataset, uncovering key trends and patterns.
 
 - 👉 **[Results Analysis Report](./reports/results.md)**  
-  This report documents the final findings and insights derived from the project, including machine learning outcomes.
+  This document highlights the final findings and insights from the project, including the outcomes of machine learning models.
 
 - 👉 **[Cook-Me-Up Streamlit App](https://cook-me-up.streamlit.app/)**  
-  Explore the dataset dynamically and gain insights using the interactive app.
+  Interactively explore the dataset and visualizations via the live Streamlit app.
+
+- 👉 **[Interactive Looker Studio Report](https://lookerstudio.google.com/reporting/77435f8b-ea4d-4201-8cf0-356d8445671e)**  
+  Access detailed, interactive visualizations and insights derived from the dataset. The report includes dynamic charts, tables, and filters to enable deeper exploration.
 
 #### Machine Learning Visualization: Pair Plot
 
