@@ -150,8 +150,12 @@ elif sections == "Visualizations":
 
     # Section 3: Integration with Looker Studio
     st.subheader("Looker Studio Integration")
-    st.write("Explore enhanced visualizations via Looker Studio:")
-    st.markdown("[Click here to view the Looker Studio report](https://example-looker-studio-link.com)")
+    st.write("Explore enhanced visualizations via Looker Studio embedded below:")
+    st.components.v1.iframe(
+        src="https://lookerstudio.google.com/reporting/77435f8b-ea4d-4201-8cf0-356d8445671e/page/mQ1cE",
+        width=1200,
+        height=800,
+    )
 
 elif sections == "Insights":
     st.header("Insights")
@@ -159,11 +163,16 @@ elif sections == "Insights":
 
     # Key takeaways
     st.write("""
-    - North and South regions dominate the dataset in terms of the number of dishes.
-    - Preparation and cooking times vary significantly, allowing clustering to identify patterns in the data.
-    - Visualizations from Looker Studio provide additional depth to the analysis.
+    - The **North** and **South** regions dominate the dataset in terms of the number of dishes.
+    - **Preparation** and **cooking times** vary significantly, highlighting opportunities for clustering and pattern identification.
+    - A diverse range of ingredients is prominent across regions, with notable overlaps between the **North** and **West** regions.
+    - The dataset reveals a high prevalence of vegetarian dishes, reflecting cultural preferences in India.
+    - Visualizations in Looker Studio provide additional depth to this analysis, enabling dynamic filtering and exploration.
     """)
-    st.write("More insights will be added as the project progresses!")
+
+    st.write("For a deeper dive into the results, check out the following reports:")
+    st.markdown("- 👉 **[Exploratory Data Analysis Report](https://github.com/IstinNew/Cook-Me-Up/blob/main/reports/EDA_report.md)**")
+    st.markdown("- 👉 **[Results Analysis Report](https://github.com/IstinNew/Cook-Me-Up/blob/main/reports/results.md)**")
 
 # Footer
 st.sidebar.markdown("---")
